@@ -1,0 +1,29 @@
+{
+  "name": "timing-simple",
+  "version": "0.0.2",
+  "description": "timing simple plug-in",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lienren/timing.git"
+  },
+  "keywords": [
+    "timing",
+    "time",
+    "settimeout",
+    "setinterval",
+    "timestamp"
+  ],
+  "author": "lienren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lienren/timing/issues"
+  },
+  "homepage": "https://github.com/lienren/timing#readme",
+  "dependencies": {
+    "moment": "^2.20.1"
+  }
+}
