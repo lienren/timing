@@ -30,6 +30,7 @@ let t = timing()
   .init()
   .run((count, time, unixtime) => {
     console.log('count:%s,time:%s,unixtime:%s', count, time, unixtime);
+    return true;
   });
 ```
 
@@ -46,6 +47,7 @@ t.stop();
 ```bash
 t.run((count, time, unixtime) => {
   console.log('count:%s,time:%s,unixtime:%s', count, time, unixtime);
+  return true;
 });
 ```
 

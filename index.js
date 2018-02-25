@@ -1,8 +1,8 @@
 /*
  * @Author: Lienren 
  * @Date: 2018-01-26 11:39:19 
- * @Last Modified by:   Lienren 
- * @Last Modified time: 2018-01-26 11:39:19 
+ * @Last Modified by: Lienren
+ * @Last Modified time: 2018-01-26 12:22:57
  */
 ('use strict');
 const moment = require('moment');
@@ -34,8 +34,9 @@ timing.prototype.start = function(callback) {
   this.cleartime();
   this.timing_object = (function(sender, callback) {
     return setTimeout(function() {
-      callback(sender.timing_count++, moment().format('YYYY-MM-DD HH:mm:ss.SSS'), moment().unix());
-      sender.start(callback);
+      if (callback(sender.timing_count++, moment().format('YYYY-MM-DD HH:mm:ss.SSS'), moment().unix())) {
+        sender.start(callback);
+      }
     }, sender.timing_interval);
   })(this, callback);
 
